@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300.0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15.0dp" >
+
+    <TextView
+        android:id="@+id/textv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10.0dp"
+        android:text="温馨提示"
+        android:textColor="@color/blue" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:layout_marginTop="10.0dp"
+        android:background="@color/blue" />
+
+    <LinearLayout
+        android:id="@+id/relayout_addview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dp"
+        android:layout_marginRight="15.0dp"
+        android:layout_marginTop="10.0dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10.0dp"
+            android:text="退出程序将不能执行关心功能和预警功能,您确定要退出吗"
+             android:textColor="@android:color/holo_red_light"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dp"
+        android:layout_marginTop="10.0dp"
+        android:paddingLeft="15.0dp"
+        android:paddingRight="15.0dp" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/confir_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="20.0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_zuixiaohua"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/confir_selector"
+            android:text="@string/zuixiaohua"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="20.0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_confir"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/confir_selector"
+            android:text="@string/tuichu"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

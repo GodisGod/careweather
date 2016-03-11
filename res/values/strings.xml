@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">关心天气</string>
+    <string name="hello_world">关心天气，更关心你</string>
+    <string name="action_settings">Settings</string>
+    <string name="cancel">取消</string>
+    <string name="zuixiaohua">最小化</string>
+    <string name="tuichu">退出</string>
+     <string name="quereng">确认</string>
+</resources>

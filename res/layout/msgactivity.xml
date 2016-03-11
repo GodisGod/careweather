@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guanxin_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="关心天气更关心你"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tip_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:text="城市"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/msg_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tip_city"
+            android:text="点击选择城市"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tip_content"
+            android:layout_below="@+id/tip_content"
+            android:background="@drawable/sms_item"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/tip_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/msg_content"
+            android:layout_below="@+id/msg_content"
+            android:text="发送时间"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/msg_weather"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/msg_num"
+            android:layout_alignLeft="@+id/msg_city"
+            android:layout_alignTop="@+id/tip_weather"
+            android:layout_toLeftOf="@+id/msg_name" />
+
+        <TextView
+            android:id="@+id/tip_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tip_num"
+            android:layout_below="@+id/msg_num"
+            android:text="短信内容"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TimePicker
+            android:id="@+id/msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tip_time"
+            android:layout_alignTop="@+id/tip_time" />
+
+        <TextView
+            android:id="@+id/tip_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tip_city"
+            android:layout_alignBottom="@+id/tip_city"
+            android:layout_toRightOf="@+id/msg_city"
+            android:text="姓名"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tip_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tip_weather"
+            android:layout_below="@+id/msg_name"
+            android:layout_marginTop="39dp"
+            android:text="号码"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/msg_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tip_name"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/tip_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tip_city"
+            android:layout_below="@+id/msg_name"
+            android:text="天气"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/msg_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/msg_weather"
+            android:layout_alignTop="@+id/tip_num"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/msg_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="保存"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tip_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/msg_save"
+            android:layout_alignParentRight="true"
+            android:text="将在指定天气的指定时间给此联系人发送此短信"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <TextView
+            android:id="@+id/guanxin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:text="姓名"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/guanxin_chengshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:text="城市"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/guanxin_tianqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/guanxin_chengshi"
+            android:text="天气"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/guanxin_shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/guanxin_tianqi"
+            android:text="时间"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        
+
+        <TextView
+            android:id="@+id/guanxin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/guanxin_name"
+            android:layout_alignBottom="@+id/guanxin_name"
+            android:layout_toRightOf="@+id/guanxin_name"
+            android:text="13023193686"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/guanxin_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/guanxin_shijian"
+            android:layout_alignTop="@+id/guanxin_num"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/guanxin_num"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="TextView"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+</LinearLayout>
